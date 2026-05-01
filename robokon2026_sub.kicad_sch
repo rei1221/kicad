@@ -3422,7 +3422,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AZ1117CH2-5.0"
+		(symbol "Regulator_Linear:AZ1117CH2-3.3"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3441,7 +3441,7 @@
 					)
 				)
 			)
-			(property "Value" "AZ1117CH2-5.0"
+			(property "Value" "AZ1117CH2-3.3"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3475,7 +3475,7 @@
 					)
 				)
 			)
-			(property "Description" "1A Fixed 5.0V LDO Linear Regulator, 15V Max Input, SOT-223"
+			(property "Description" "1A Fixed 3.3V LDO Linear Regulator, 15V Max Input, SOT-223"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3508,7 +3508,7 @@
 					)
 				)
 			)
-			(symbol "AZ1117CH2-5.0_0_1"
+			(symbol "AZ1117CH2-3.3_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -3521,7 +3521,7 @@
 					)
 				)
 			)
-			(symbol "AZ1117CH2-5.0_1_1"
+			(symbol "AZ1117CH2-3.3_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -4272,6 +4272,18 @@
 		(uuid "0f09713d-3fee-47b4-b88f-4e71394dfdbf")
 	)
 	(junction
+		(at 124.46 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "220aa1c0-02fe-47f4-9a26-a6684138c09a")
+	)
+	(junction
+		(at 176.53 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24594e49-09bc-4530-9434-383f84f14df1")
+	)
+	(junction
 		(at 232.41 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4290,12 +4302,6 @@
 		(uuid "3423fd76-b4ec-4545-8d0d-097e0f1c4930")
 	)
 	(junction
-		(at 148.59 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4628481b-2cec-4ebc-bcfc-68a17226315c")
-	)
-	(junction
 		(at 251.46 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4308,16 +4314,16 @@
 		(uuid "526d30a9-0dbe-4481-adec-ec399d8b77b4")
 	)
 	(junction
+		(at 99.06 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e543d63-ea15-43b0-b595-75f7b0e661e3")
+	)
+	(junction
 		(at 162.56 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "838130a2-d443-430e-b548-ce8cff75274f")
-	)
-	(junction
-		(at 176.53 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "848f2cdc-bdab-40d8-a1ec-a6f389855035")
 	)
 	(junction
 		(at 212.09 124.46)
@@ -4336,6 +4342,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d5da8bf-b6ad-46bd-866c-75a47b480c46")
+	)
+	(junction
+		(at 148.59 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a15413d2-2803-48f3-b3b4-771baebb65d7")
 	)
 	(junction
 		(at 232.41 78.74)
@@ -4366,18 +4378,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bcae02fd-12a0-4e01-88c3-d548d535559d")
-	)
-	(junction
-		(at 124.46 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c58250bd-f8d9-416e-b237-f0c7de66f56d")
-	)
-	(junction
-		(at 99.06 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9e49af7-cf35-4b14-adf4-95d9c90405d0")
 	)
 	(junction
 		(at 212.09 71.12)
@@ -4605,6 +4605,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 44.45) (xy 111.76 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff7b7bf-5ff6-40f7-aeb4-16efbb1b4696")
+	)
+	(wire
+		(pts
+			(xy 99.06 45.72) (xy 99.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c4513a-e0e4-4139-babd-37db41b3cb0b")
+	)
+	(wire
+		(pts
 			(xy 148.59 36.83) (xy 154.94 36.83)
 		)
 		(stroke
@@ -4652,6 +4672,26 @@
 			(type default)
 		)
 		(uuid "19f9d66e-0f59-4eaf-905d-35b039ce1af8")
+	)
+	(wire
+		(pts
+			(xy 148.59 36.83) (xy 148.59 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b01cf28-5ae0-4ba5-9a42-4f150eb39160")
+	)
+	(wire
+		(pts
+			(xy 124.46 36.83) (xy 124.46 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c84420f-6f06-4d2f-8d6a-269ceea0a250")
 	)
 	(wire
 		(pts
@@ -4712,6 +4752,16 @@
 			(type default)
 		)
 		(uuid "28dc8727-e002-417b-9cbf-3a6b7d01fe46")
+	)
+	(wire
+		(pts
+			(xy 148.59 45.72) (xy 148.59 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f8ffdb-bb78-4054-8d23-85682516f372")
 	)
 	(wire
 		(pts
@@ -4862,16 +4912,6 @@
 			(type default)
 		)
 		(uuid "44a00522-9c77-4cea-86e5-bfb3f81b76ce")
-	)
-	(wire
-		(pts
-			(xy 99.06 36.83) (xy 99.06 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46481bde-9fad-46f6-a3e1-b29bed8608f7")
 	)
 	(wire
 		(pts
@@ -5125,6 +5165,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 45.72) (xy 176.53 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81d0f60d-6b83-4889-8dc7-ffecd26a1e93")
+	)
+	(wire
+		(pts
 			(xy 59.69 124.46) (xy 63.5 124.46)
 		)
 		(stroke
@@ -5175,6 +5225,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 36.83) (xy 99.06 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de2a35c-b56e-4ec5-adaf-8a2d6300f039")
+	)
+	(wire
+		(pts
 			(xy 34.29 39.37) (xy 34.29 45.72)
 		)
 		(stroke
@@ -5185,16 +5245,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 36.83) (xy 148.59 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9188582d-da51-4f32-8996-4a903b186a21")
-	)
-	(wire
-		(pts
 			(xy 212.09 55.88) (xy 212.09 58.42)
 		)
 		(stroke
@@ -5202,6 +5252,16 @@
 			(type default)
 		)
 		(uuid "947c427a-5908-432a-b3b1-683e7793c353")
+	)
+	(wire
+		(pts
+			(xy 124.46 45.72) (xy 124.46 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95727d01-3aa3-44bf-8f93-4b6effec41ca")
 	)
 	(wire
 		(pts
@@ -5275,13 +5335,13 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 46.99) (xy 148.59 48.26)
+			(xy 176.53 36.83) (xy 176.53 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a47f3d44-2b2f-4740-9c2c-9bec1b676ce6")
+		(uuid "a334c40e-924f-4e92-831c-784dadf1f49a")
 	)
 	(wire
 		(pts
@@ -5335,16 +5395,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 36.83) (xy 176.53 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b823ef2d-6dcf-4d26-a088-471491555ab8")
-	)
-	(wire
-		(pts
 			(xy 107.95 96.52) (xy 107.95 97.79)
 		)
 		(stroke
@@ -5385,16 +5435,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 44.45) (xy 111.76 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bed26f6f-af38-4098-86ee-d869a28f708f")
-	)
-	(wire
-		(pts
 			(xy 209.55 111.76) (xy 214.63 111.76)
 		)
 		(stroke
@@ -5412,26 +5452,6 @@
 			(type default)
 		)
 		(uuid "c9b8a7ad-91c8-4be7-a54d-623b0ccf00c8")
-	)
-	(wire
-		(pts
-			(xy 124.46 46.99) (xy 124.46 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca90b6f3-90bd-4bdb-83b4-85550ed1b5a4")
-	)
-	(wire
-		(pts
-			(xy 176.53 46.99) (xy 176.53 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbc558f5-3c38-4a58-89de-9d8a431cc028")
 	)
 	(wire
 		(pts
@@ -5532,26 +5552,6 @@
 			(type default)
 		)
 		(uuid "de553428-cc3f-44f0-9920-4688dabf2ca6")
-	)
-	(wire
-		(pts
-			(xy 99.06 46.99) (xy 99.06 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de9f59a2-4e65-4cdc-b2c8-15549c64cef5")
-	)
-	(wire
-		(pts
-			(xy 124.46 36.83) (xy 124.46 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df6d537c-c448-47cd-8caf-068929c0b177")
 	)
 	(wire
 		(pts
@@ -7285,91 +7285,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LD1117S50TR_SOT223")
-		(at 162.56 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50095242-6509-4f97-af58-c2a4785cd740")
-		(property "Reference" "U5"
-			(at 162.56 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LD1117S50TR_SOT223"
-			(at 162.56 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 162.56 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
-			(at 165.1 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 5.0V, SOT-223"
-			(at 162.56 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "ca2e722a-404d-496b-b9a7-cb986abba6f6")
-		)
-		(pin "1"
-			(uuid "3b2d6ae1-ab1b-4413-8c19-e636fe1630fb")
-		)
-		(pin "2"
-			(uuid "3e5e113d-1bbe-4d48-a692-b09cc9556c5e")
-		)
-		(instances
-			(project "robokon2026_sub"
-				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 176.53 43.18 0)
+		(at 124.46 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7380,7 +7297,7 @@
 		(fields_autoplaced yes)
 		(uuid "639c0034-231b-4f78-beeb-b7e8099bdc93")
 		(property "Reference" "C6"
-			(at 180.34 41.9099 0)
+			(at 128.27 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7391,7 +7308,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 180.34 44.4499 0)
+			(at 128.27 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7402,7 +7319,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 177.4952 46.99 0)
+			(at 125.4252 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7413,7 +7330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 43.18 0)
+			(at 124.46 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7424,7 +7341,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 43.18 0)
+			(at 124.46 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7607,7 +7524,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 43.18 0)
+		(at 176.53 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7618,7 +7535,7 @@
 		(fields_autoplaced yes)
 		(uuid "6baa4cba-0055-49a6-90d0-7b8a7e62287c")
 		(property "Reference" "C4"
-			(at 128.27 41.9099 0)
+			(at 180.34 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7629,7 +7546,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 128.27 44.4499 0)
+			(at 180.34 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7640,7 +7557,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 125.4252 46.99 0)
+			(at 177.4952 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7651,7 +7568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 43.18 0)
+			(at 176.53 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7662,7 +7579,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 124.46 43.18 0)
+			(at 176.53 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8317,7 +8234,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 148.59 43.18 0)
+		(at 99.06 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8327,7 +8244,7 @@
 		(dnp no)
 		(uuid "94b1e3f4-bfcf-4b06-9828-01850b0bddbb")
 		(property "Reference" "C5"
-			(at 143.002 41.656 0)
+			(at 93.472 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8338,7 +8255,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 141.732 43.942 0)
+			(at 92.202 42.672 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8349,7 +8266,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 149.5552 46.99 0)
+			(at 100.0252 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8360,7 +8277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 43.18 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8371,7 +8288,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 148.59 43.18 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8558,7 +8475,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 99.06 43.18 0)
+		(at 148.59 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8568,7 +8485,7 @@
 		(dnp no)
 		(uuid "a8c0b75f-38cf-4189-9c5c-56ade0e5b1d1")
 		(property "Reference" "C3"
-			(at 93.472 41.656 0)
+			(at 143.002 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8579,7 +8496,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 92.202 43.942 0)
+			(at 141.732 42.672 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8590,7 +8507,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 100.0252 46.99 0)
+			(at 149.5552 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8601,7 +8518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8612,7 +8529,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 99.06 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8632,6 +8549,89 @@
 			(project "robokon2026_sub"
 				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LD1117S50TR_SOT223")
+		(at 111.76 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac2bf764-6bc7-4bf2-959b-1f82eb65bf30")
+		(property "Reference" "U6"
+			(at 111.76 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD1117S50TR_SOT223"
+			(at 111.76 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 111.76 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
+			(at 114.3 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 5.0V, SOT-223"
+			(at 111.76 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "b1508bdc-a336-4949-8cbb-e5781ccc8bc7")
+		)
+		(pin "1"
+			(uuid "ba62f0d9-f39e-4e6f-a146-310129b80695")
+		)
+		(pin "2"
+			(uuid "88c7b8dc-f1be-4d42-8ee0-b067d9552087")
+		)
+		(instances
+			(project "robokon2026_sub"
+				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -8710,91 +8710,6 @@
 			(project "robokon2026_sub"
 				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AZ1117CH2-5.0")
-		(at 111.76 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5f7ca8f-58a5-4fe6-b0dc-3095ba579070")
-		(property "Reference" "U4"
-			(at 113.792 31.496 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AZ1117CH2-5.0"
-			(at 119.888 33.274 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 111.76 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf"
-			(at 111.76 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1A Fixed 5.0V LDO Linear Regulator, 15V Max Input, SOT-223"
-			(at 111.76 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "797aa2ae-befe-4b36-8b6a-ea2595c026f8")
-		)
-		(pin "2"
-			(uuid "6b9cce01-bc42-4802-931d-4bbeebf41e4a")
-		)
-		(pin "3"
-			(uuid "600b4a0f-82ce-4633-8a12-b67074bc7c69")
-		)
-		(instances
-			(project "robokon2026_sub"
-				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -9105,6 +9020,90 @@
 				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
 					(reference "U1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AZ1117CH2-3.3")
+		(at 162.56 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc5fbace-0ffa-452f-a49d-fe3f337d9e86")
+		(property "Reference" "U4"
+			(at 162.56 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1117CH2-3.3"
+			(at 162.56 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 162.56 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117C.pdf"
+			(at 162.56 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Fixed 3.3V LDO Linear Regulator, 15V Max Input, SOT-223"
+			(at 162.56 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "354b593b-f6d9-430f-abb6-fa91e6056e0d")
+		)
+		(pin "1"
+			(uuid "4641b48d-398b-4a7f-bdcc-1b0d098d0dc0")
+		)
+		(pin "2"
+			(uuid "b0bd8534-b53a-4c1e-b3ae-e41de0ba7738")
+		)
+		(instances
+			(project "robokon2026_sub"
+				(path "/0bff66a3-60b4-47e8-94ee-66454dfd530a"
+					(reference "U4")
+					(unit 1)
 				)
 			)
 		)
